@@ -4,7 +4,7 @@ const axios = require('axios');
 const bodyParser = require('body-parser');
 
 const app = express();
-const BACKEND_URL = 'http://3.110.43.178:9000';
+const BACKEND_URL = 'http://3.109.208.106:9000';
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -57,6 +57,7 @@ const PORT = 8000;
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Frontend server running at http://localhost:${PORT}`);
 });
+
 
 
 
